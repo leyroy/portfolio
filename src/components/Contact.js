@@ -9,15 +9,15 @@ import { motion } from "framer-motion";
 
 export default function Contact() {
 	return (
-		<div className="flex px-4 flex-col items-center justify-center w-full h-screen gap-12 m-auto mb-52 md:mb-4 mt-[7rem] md:mt-0 pt-20 sm:pt-9">
+		<div className="flex flex-col md:px-44 items-center justify-center w-full h-screen gap-12 m-auto mb-52 md:mb-4 mt-[7rem] md:mt-0 pt-20 sm:pt-9">
 			<h1 className="text-[35px] font-bold mt-4">Contat Me</h1>
-			<div className="flex flex-col items-center justify-center w-full px-3 md:flex-row ">
+			<div className="flex flex-col items-center justify-center w-full md:px-5 md:flex-row ">
 				<motion.div
 					initial={{ opacity: 0, y: 20 }}
 					whileInView={{ opacity: 1, y: 0 }}
 					exit={{ opacity: 0, y: 90 }}
 					transition={{ delay: 0.2, duration: 0.2 }}
-					className="w-full h-full px-6 sm:max-w-7xl"
+					className="w-full h-full px-2 md:px-6 sm:max-w-7xl"
 				>
 					<div className="w-full h-auto text-white border p-9 rounded-2xl border-sky-600">
 						<motion.div
@@ -94,7 +94,7 @@ export default function Contact() {
 						</motion.div>
 					</div>
 				</motion.div>
-				<ContactForm className="" />
+				<ContactForm />
 			</div>
 		</div>
 	);

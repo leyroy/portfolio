@@ -21,7 +21,7 @@ export default function Projects() {
 	return (
 		<div
 			ref={ref}
-			className="relative w-screen px-6 pt-4 mb-10 md:pt-10"
+			className="relative w-screen px-2 pt-4 mb-10 md:px-6 md:pt-10"
 		>
 			<motion.div className="sticky right-0 flex flex-col items-center w-full gap-2 top-2 md:top-[3rem] ">
 				<h1 className="font-mono text-4xl font-[900] ">

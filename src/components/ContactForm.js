@@ -43,7 +43,7 @@ export default function ContactForm() {
 			initial={{ opacity: 0, y: 60 }}
 			whileInView={{ opacity: 1, y: 0 }}
 			transition={{ delay: 0.2, duration: 0.2 }}
-			className="relative w-full px-8 md:max-w-3xl"
+			className="relative w-full px-2 md:max-w-3xl"
 		>
 			{error && (
 				<p

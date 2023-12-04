@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 function About() {
 	return (
-		<div className=" md:p-10 p-8 m-auto gap-3 mt-9 min-h-[89vh] w-[80%] flex flex-col items-center justify-center ">
+		<div className=" md:p-10 p-2 m-auto gap-3 mt-9 w-full min-h-[89vh] nd:w-[80%] flex flex-col items-center justify-center ">
 			<h1 className="mx-auto text-xl font-extrabold text-boled">
 				About Me
 			</h1>
@@ -19,7 +19,7 @@ function About() {
 						className="object-cover w-[320px] max-h-[300px] rounded-full md:mb-20"
 					/>
 				</div>
-				<div className="flex flex-col items-center justify-between gap-6 px-8 mt-3 md:mt-0 ">
+				<div className="flex flex-col items-center justify-between gap-6 px-4 mt-3 md:mt-0 ">
 					<div className="flex flex-col items-center w-full gap-3 md:flex-row">
 						<motion.div
 							initial={{ opacity: 0 }}
