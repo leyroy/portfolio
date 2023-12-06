@@ -43,13 +43,13 @@ export default function ContactForm() {
 			initial={{ opacity: 0, y: 60 }}
 			whileInView={{ opacity: 1, y: 0 }}
 			transition={{ delay: 0.2, duration: 0.2 }}
-			className="relative w-full px-2 sm:px-5 md:px-auto"
+			className="relative w-full px-3 sm:px-5 md:px-auto"
 		>
 			{error && (
 				<p
-					className={`absolute m-auto self-center  text-center text-sm px-3 py-1 md:py-2 md:text-lg font-normal text-black ${
+					className={`absolute m-auto self-center  text-center text-[13px] px-3 py-1 md:py-2 md:text-lg font-normal text-black ${
 						!errorStatus ? "bg-red-600" : "bg-green-600"
-					} rounded-full md:right-2 -top-8 `}
+					} rounded-md md:right-2 -top-8 `}
 				>
 					{error}
 				</p>
@@ -103,7 +103,7 @@ export default function ContactForm() {
 				/>
 				<button
 					type="submite"
-					className="px-4 py-2 m-auto md:ml-auto w-4/5 md:w-auto rounded-lg font-semibold text-[12px] md:text-[17px] hover:bg-sky-950 duration-300 ease-in-out  bg-sky-700"
+					className="px-4 py-2 m-auto md:ml-auto w-4/5 md:w-auto rounded-lg font-semibold text-[12px] md:text-[17px] hover:bg-sky-950 duration-300 ease-in-out mt-3 bg-sky-700"
 				>
 					Submite
 				</button>

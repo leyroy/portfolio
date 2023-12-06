@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 
 export default function Contact() {
 	return (
-		<div className="flex flex-col items-center justify-center w-full md:w-5/6 h-screen gap-12 m-auto mb-52 md:mb-4 mt-[7rem] md:mt-0 pt-20 sm:pt-9">
+		<div className="flex flex-col items-center justify-center w-full m-auto md:w-5/6 h-screen gap-12 mb-[18rem] md:mb-4 mt-[7rem] md:mt-0 pt-20 sm:pt-9">
 			<h1 className="text-[30px] font-semibold mt-4">
 				Contat Me
 			</h1>
