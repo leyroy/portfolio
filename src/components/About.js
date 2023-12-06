@@ -22,41 +22,41 @@ function About() {
 				<div className="flex flex-col items-center justify-between gap-6 px-4 mt-3 md:mt-0 ">
 					<div className="flex flex-col items-center w-full gap-3 md:flex-row">
 						<motion.div
-							initial={{ opacity: 0 }}
-							whileInView={{ opacity: 1 }}
-							transition={{ duration: 0.7, delay: 0.4 }}
+							initial={{ opacity: 0, y: 40 }}
+							whileInView={{ opacity: 1, y: 0 }}
+							transition={{ duration: 0.48, delay: 0.32 }}
 							className="flex flex-col items-center justify-center p-4 text-center bg-white border-2 border-purple-900 rounded-md hover:scale-105 hover:bg-fuchsia-800 group"
 						>
-							<h3 className="text-2xl font-bold group-hover:text-gray-600 text-sky-700">
+							<h3 className="text-lg font-bold md:text-2xl group-hover:text-gray-600 text-sky-900">
 								Web Developer
 							</h3>
-							<p className="p-2 text-xl font-semibold text-sky-950 group-hover:text-white">
+							<p className="p-2 text-lg font-semibold text-sky-950 group-hover:text-white">
 								Ability to buld resposive website
 							</p>
 						</motion.div>
 						<motion.div
-							initial={{ opacity: 0 }}
-							whileInView={{ opacity: 1 }}
-							transition={{ duration: 0.79, delay: 0.49 }}
+							initial={{ opacity: 0, y: 40 }}
+							whileInView={{ opacity: 1, y: 0 }}
+							transition={{ duration: 0.5, delay: 0.4 }}
 							className="flex flex-col items-center justify-center p-4 text-center bg-white border-2 border-purple-900 rounded-md hover:scale-105 hover:bg-fuchsia-800 group"
 						>
-							<h3 className="text-2xl font-bold group-hover:text-gray-600 text-sky-900">
+							<h3 className="text-lg font-bold md:text-2xl group-hover:text-gray-600 text-sky-900">
 								Web Developer
 							</h3>
-							<p className="p-2 text-xl font-semibold group-hover:text-white text-sky-950">
+							<p className="p-2 text-lg font-semibold group-hover:text-white text-sky-950">
 								Ability to buld resposive website
 							</p>
 						</motion.div>
 						<motion.div
-							initial={{ opacity: 0 }}
-							whileInView={{ opacity: 1 }}
-							transition={{ duration: 0.9, delay: 0.67 }}
+							initial={{ opacity: 0, y: 40 }}
+							whileInView={{ opacity: 1, y: 0 }}
+							transition={{ duration: 0.52, delay: 0.43 }}
 							className="flex flex-col items-center justify-center p-4 text-center bg-white border-2 border-purple-900 rounded-md hover:scale-105 hover:bg-fuchsia-800 group"
 						>
-							<h3 className="text-2xl font-bold group-hover:text-gray-600 text-sky-700">
+							<h3 className="text-lg font-bold md:text-2xl group-hover:text-gray-600 text-sky-900">
 								Web Developer
 							</h3>
-							<p className="p-2 text-xl font-semibold group-hover:text-white text-sky-950">
+							<p className="p-2 text-lg font-semibold group-hover:text-white text-sky-950">
 								Ability to buld resposive website
 							</p>
 						</motion.div>

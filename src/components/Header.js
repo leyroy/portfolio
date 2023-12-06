@@ -39,12 +39,11 @@ export default function Header({
 		});
 	};
 	return (
-		<div className="fixed bottom-0 left-0 right-0 top-auto z-50 py-1 bg-black shadow-md md:bottom-auto md:top-0 md:px-12 md:bg-transparent">
-			<div className="relative flex items-center justify-between w-full px-16 pt-1 ">
+		<div className="fixed bottom-0 left-0 right-0 top-auto z-10 py-1 bg-black backdrop-blur-sm md:bottom-auto md:top-0 md:px-12 md:bg-transparent">
+			<div className="relative flex items-center justify-between w-full px-4 pt-1 md:px-16 ">
 				<h1 className="text-lg font-semibold text-white md:font-bold md:text-3xl md:text-slate-900">
 					Ley Roy
 				</h1>
-
 				<ul className="items-center justify-between hidden gap-5 md:flex">
 					{naveItems.map((item) => (
 						<li
@@ -64,7 +63,7 @@ export default function Header({
 					whileInView={{ opacity: 1, y: 0 }}
 					exit={{ opacity: 0, y: 90 }}
 					transition={{ delay: 0.2, duration: 0.2 }}
-					className={`absolute left-0 md:hidden right-0 grid mb-4 border-b border-gray-400  grid-cols-2 gap-5 rounded-t-[2rem] bg-black bg-opacity-80 bottom-8 h-44  ${
+					className={`absolute backdrop-blur-sm left-0 md:hidden right-0 grid mb-4 border-b border-gray-400  grid-cols-2 gap-5 rounded-t-[2rem] bg-black bg-opacity-80 bottom-8 h-44  ${
 						!toglemenu ? "hidden" : "block"
 					}`}
 				>

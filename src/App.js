@@ -4,16 +4,19 @@ import HeroPage from "./components/HeroPage";
 import Projects from "./components/Projects";
 import About from "./components/About";
 import Contact from "./components/Contact";
-// import { FaAvianex } from "react-icons/fa";
+import ScrollUp from "./components/ScrollUp";
 
-export default function () {
+export default function App() {
 	const aboutRef = useRef(null);
 	const projectRef = useRef(null);
 	const contactRef = useRef(null);
 	const heroRef = useRef(null);
 
+	window.addEventListener("scroll", () => {});
+
 	return (
-		<div className="">
+		<div className="min-h-screen">
+			<ScrollUp />
 			<Header
 				heroRef={heroRef}
 				aboutRef={aboutRef}
