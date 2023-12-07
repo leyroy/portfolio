@@ -24,7 +24,7 @@ export default function App() {
 				contactRef={contactRef}
 			/>
 			<section
-				className="min-h-screen pb-4 flex items-center bg-[url(./Assets/leyroy.jpg)]  bg-no-repeat bg-blend-multiply bg-cover bg-center "
+				className="min-h-screen flex items-center bg-[url(./Assets/leyroy.jpg)]  bg-no-repeat bg-blend-multiply backdrop-blur-md bg-cover bg-center "
 				ref={heroRef}
 				id="home"
 			>

@@ -8,6 +8,12 @@ export default function ContactForm() {
 	const emailRef = useRef();
 	const requestRef = useRef();
 
+	const clearInputsValues = () => {
+		nameRef.current.value = "";
+		emailRef.current.value = "";
+		requestRef.current.value = "";
+	};
+
 	const handleSubmit = (e) => {
 		const claiantName = nameRef.current.value;
 		const email = emailRef.current.value;
@@ -25,6 +31,7 @@ export default function ContactForm() {
 		) {
 			console.log(data);
 			setError("massage submitted");
+			clearInputsValues();
 			setErrorStatus(true);
 			setTimeout(() => {
 				setError(null);
@@ -46,13 +53,17 @@ export default function ContactForm() {
 			className="relative w-full px-3 sm:px-5 md:px-auto"
 		>
 			{error && (
-				<p
+				<motion.p
+					initial={{ opacity: 0 }}
+					whileInView={{ opacity: 1 }}
+					exit={{ opacity: 0 }}
+					transition={{ delay: 0.2, duration: 0.2 }}
 					className={`absolute m-auto self-center  text-center text-[13px] px-3 py-1 md:py-2 md:text-lg font-normal text-black ${
 						!errorStatus ? "bg-red-600" : "bg-green-600"
 					} rounded-md md:right-2 -top-8 `}
 				>
 					{error}
-				</p>
+				</motion.p>
 			)}
 			<form
 				action="submit"
@@ -101,12 +112,13 @@ export default function ContactForm() {
 					placeholder="Please enter your request here.."
 					className="w-full px-3 py-2 font-serif text-[15px] bg-transparent border rounded-md outline-none border-sky-400  min-h-[9rem] "
 				/>
-				<button
+				<motion.button
+					whileTap={{ scale: 0.9 }}
 					type="submite"
 					className="px-4 py-2 m-auto md:ml-auto w-4/5 md:w-auto rounded-lg font-semibold text-[12px] md:text-[17px] hover:bg-sky-950 duration-300 ease-in-out mt-3 bg-sky-700"
 				>
 					Submite
-				</button>
+				</motion.button>
 			</form>
 		</motion.div>
 	);
