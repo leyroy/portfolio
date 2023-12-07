@@ -11,7 +11,7 @@ export default function HeroPage({ contactRef }) {
 	};
 	return (
 		<div className="flex items-center justify-center w-full min-h-[100vh] px-3 mx-auto backdrop-blur-md bg-none w-fu md:px-16">
-			<div className="relative flex flex-col items-center justify-center gap-3 pt-4 md:pt-12 md:gap-7 md:flex-row">
+			<div className="flex flex-col items-center justify-center gap-3 pt-4 md:pt-12 md:gap-7 md:flex-row">
 				<motion.div
 					initial={{ opacity: 0, x: -10 }}
 					whileInView={{ opacity: 1, x: 0 }}
@@ -52,7 +52,6 @@ export default function HeroPage({ contactRef }) {
 						className="object-cover rounded-md md:mt-5"
 					/>
 				</motion.div>
-				<div className="absolute bottom-0 left-0 w-full bg-red-600 md:bottom-auto h-1/2 md:h-full md:w-1/2"></div>
 			</div>
 		</div>
 	);
