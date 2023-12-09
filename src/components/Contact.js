@@ -19,7 +19,7 @@ export default function Contact() {
 					whileInView={{ opacity: 1, y: 0 }}
 					exit={{ opacity: 0, y: 90 }}
 					transition={{ delay: 0.2, duration: 0.2 }}
-					className="w-5/6 h-auto mb-6 text-white border md:mb-auto md:w-3/5 p-9 rounded-2xl border-sky-600"
+					className="w-5/6 h-auto md:w-[32rem] mb-6 text-white border md:mb-auto p-9 rounded-2xl border-sky-600"
 				>
 					<motion.div
 						initial={{ opacity: 0, y: 20 }}

@@ -1,71 +1,58 @@
 import React from "react";
 import me from "../Assets/leyroy.jpg";
-import { motion } from "framer-motion";
+import {
+	FaInstagram,
+	FaFacebook,
+	FaLinkedin,
+	FaGithub,
+} from "react-icons/fa6";
 
 function About() {
 	return (
-		<div className=" md:p-10 p-2 m-auto gap-3 mt-9 w-full min-h-[89vh] nd:w-[80%] flex flex-col items-center justify-center ">
+		<div className=" md:p-10 mb-10 p-2 m-auto gap-3 mt-9 w-full min-h-[89vh] nd:w-[80%] flex flex-col items-center justify-center ">
 			<h1 className="mx-auto text-xl font-extrabold text-boled">
 				About Me
 			</h1>
-			<div className="flex flex-col items-center justify-center">
-				<div className="flex w-[350px] h-[350px] flex-col items-end p-2 md:flex-row item-center">
-					<motion.img
-						initial={{ opacity: 0, x: 20 }}
-						whileInView={{ opacity: 1, x: 0 }}
-						transition={{ duration: 0.7, delay: 0.4 }}
-						src={me}
-						alt=""
-						className="object-cover w-[320px] max-h-[300px] rounded-full md:mb-20"
-					/>
-				</div>
-				<div className="flex flex-col items-center justify-between gap-6 px-4 mt-3 md:mt-0 ">
-					<div className="flex flex-col items-center w-full gap-3 md:flex-row">
-						<motion.div
-							initial={{ opacity: 0, y: 40 }}
-							whileInView={{ opacity: 1, y: 0 }}
-							transition={{ duration: 0.48, delay: 0.32 }}
-							className="flex flex-col items-center justify-center p-4 text-center bg-white border-2 border-purple-900 rounded-md hover:scale-105 hover:bg-fuchsia-800 group"
-						>
-							<h3 className="text-lg font-bold md:text-2xl group-hover:text-gray-600 text-sky-900">
-								Web Developer
-							</h3>
-							<p className="p-2 text-lg font-semibold text-sky-950 group-hover:text-white">
-								Ability to buld resposive website
-							</p>
-						</motion.div>
-						<motion.div
-							initial={{ opacity: 0, y: 40 }}
-							whileInView={{ opacity: 1, y: 0 }}
-							transition={{ duration: 0.5, delay: 0.4 }}
-							className="flex flex-col items-center justify-center p-4 text-center bg-white border-2 border-purple-900 rounded-md hover:scale-105 hover:bg-fuchsia-800 group"
-						>
-							<h3 className="text-lg font-bold md:text-2xl group-hover:text-gray-600 text-sky-900">
-								Web Developer
-							</h3>
-							<p className="p-2 text-lg font-semibold group-hover:text-white text-sky-950">
-								Ability to buld resposive website
-							</p>
-						</motion.div>
-						<motion.div
-							initial={{ opacity: 0, y: 40 }}
-							whileInView={{ opacity: 1, y: 0 }}
-							transition={{ duration: 0.52, delay: 0.43 }}
-							className="flex flex-col items-center justify-center p-4 text-center bg-white border-2 border-purple-900 rounded-md hover:scale-105 hover:bg-fuchsia-800 group"
-						>
-							<h3 className="text-lg font-bold md:text-2xl group-hover:text-gray-600 text-sky-900">
-								Web Developer
-							</h3>
-							<p className="p-2 text-lg font-semibold group-hover:text-white text-sky-950">
-								Ability to buld resposive website
-							</p>
-						</motion.div>
+			<div className="flex flex-col items-center justify-center mt-10 md:w-4/5 md:flex-row">
+				<div className="flex-1">
+					<h2 className="text-4xl font-extrabold ">Hello</h2>
+					<h3 className="my-3 text-lg font-bold text-gray-100">
+						here is who I am
+					</h3>
+					<div className="flex flex-col justify-between px-6 mt-10">
+						<p className="p-4 text-lg font-semibold text-center ">
+							Hello there! I'm Ley Roy, a passionate Frontend
+							Developer on a mission to transform digital
+							landscapes with creativity and precision.
+						</p>
+						<div className="flex items-center w-full gap-20 px-6 m-auto mt-16 mb-4 md:justify-between">
+							<button className="px-3 py-2 text-sm transition-all duration-300 ease-in-out rounded-md bg-sky-700 hover:bg-sky-400 whitespace-nowrap">
+								Download Resume
+							</button>
+							<button className="px-3 py-2 text-sm transition-all duration-300 ease-in-out rounded-md bg-sky-700 hover:bg-sky-400 whitespace-nowrap">
+								Contact Me
+							</button>
+						</div>
 					</div>
-					<p className=" md:w-4/5 p-4 px-2 sm:px-6 text-center md:px-3 text-[18px] font-bold tracking-wide text-slate-300 ">
-						Lorem ipsum dolor sit amet consectetur adipisicing
-						elit. Inventore qui voluptatibus aut? Asperiores,
-						obcaecati tempora.
-					</p>
+				</div>
+				<div className="flex-1 rounded-md  bg-orange-700 mt-6 min-w-[50%] ">
+					<div className="flex flex-col items-center w-full h-full p-4 text-black bg-white rounded-t-md ">
+						<img
+							src={me}
+							alt=""
+							className="w-56 h-56 rounded-full"
+						/>
+						<h1 className="mt-2 text-sm font-semibold ">
+							ATIWEN SOLOMON
+						</h1>
+						<h2 className="text-sm text-gray-800">Ley Roy</h2>
+					</div>
+					<div className="flex items-center justify-center p-2 mx-auto gap-7">
+						<FaInstagram className="text-2xl font-bold transition-all duration-200 ease-in-out rounded-full cursor-pointer w-7 h-7 hover:scale-105" />{" "}
+						<FaFacebook className="text-2xl font-bold transition-all duration-200 ease-in-out rounded-full cursor-pointer w-7 h-7 hover:scale-105" />{" "}
+						<FaLinkedin className="text-2xl font-bold transition-all duration-200 ease-in-out rounded-full cursor-pointer w-7 h-7 hover:scale-105" />
+						<FaGithub className="text-2xl font-bold transition-all duration-200 ease-in-out rounded-full cursor-pointer w-7 h-7 hover:scale-105" />
+					</div>
 				</div>
 			</div>
 		</div>

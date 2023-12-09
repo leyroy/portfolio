@@ -50,7 +50,7 @@ export default function ContactForm() {
 			initial={{ opacity: 0, y: 60 }}
 			whileInView={{ opacity: 1, y: 0 }}
 			transition={{ delay: 0.2, duration: 0.2 }}
-			className="relative w-full px-3 sm:px-5 md:px-auto"
+			className="relative w-full px-3 md:w-[42rem] sm:px-5 md:px-auto"
 		>
 			{error && (
 				<motion.p

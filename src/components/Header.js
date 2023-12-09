@@ -63,7 +63,7 @@ export default function Header({
 					whileInView={{ opacity: 1, y: 0 }}
 					exit={{ opacity: 0, y: 90 }}
 					transition={{ delay: 0.2, duration: 0.2 }}
-					className={`absolute backdrop-blur-sm left-0 md:hidden right-0 grid mb-4 border-b border-gray-400  grid-cols-2 gap-5 rounded-t-[2rem] bg-black bg-opacity-80 bottom-8 h-2/4  ${
+					className={`absolute backdrop-blur-sm left-0 md:hidden right-0 grid mb-4 border-b border-gray-400  grid-cols-2 gap-5 rounded-t-[2rem] bg-black bg-opacity-95 bottom-8 h-[40vh]  ${
 						!toglemenu ? "hidden" : "block"
 					}`}
 				>
