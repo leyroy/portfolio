@@ -48,7 +48,7 @@ npm install
 ### Running locally
 
 ```bash
-npm start
+pnpm start
 ```
 
 Opens [http://localhost:3000](http://localhost:3000) in your browser. The page hot-reloads on file changes.
@@ -56,7 +56,7 @@ Opens [http://localhost:3000](http://localhost:3000) in your browser. The page h
 ### Building for production
 
 ```bash
-npm run build
+pnpm run build
 ```
 
 Outputs an optimized production bundle to the `build/` folder.
