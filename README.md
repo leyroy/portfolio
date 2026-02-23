@@ -80,7 +80,6 @@ This runs `npm run build` first (via the `predeploy` script) and then publishes 
 Feel free to reach out or connect:
 
 - GitHub: [@leyroy](https://github.com/leyroy)
-- I will addthe rest
 - <!-- Add your preferred contact link here (email, LinkedIn, etc.) -->
 
 ---
